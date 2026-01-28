@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nimmi Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color:rgb(94, 1, 93);
+            color: aliceblue;
+            font-family: 'Poppins',sans-serif;
+        }
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(177, 10, 93);
+        }
+        nav ul{
+            display: flex;
+            just-content: center;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 0 23px;
+        }
+         nav ul li a{
+            text-decoration: none;
+            color: white;
+        }
+         nav ul li a:hover{
+            text-decoration: none;
+            color: rgb(243, 129, 129);
+            font-size: 1.2rem;
+        }
+        main hr{
+            border: 0;
+        background: rgb(225, 5, 111);
+        height: 1.2px;
+        margin: 40px 84px;
+        }
+        .left{
+            font-size: 1.5rem;
+        }
+        .firstSection{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 140px 0;
+        }
+        .firstSection >div{
+            width: 30%;
+        }
+        .leftSection{
+            font-size: 2rem; 
+        } 
+        .leftSection .buttons{
+            padding: 23px;
+        }
+        .leftSection .btn{
+            padding: 12px;
+            background: rgb(72, 1, 72);
+            color: whitesmoke;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            font-size: 0.5rem;
+        }
+        .leftSection .btn:hover{
+            text-decoration: none;
+            color: rgb(243, 129, 129);
+            font-size: 1rem;
+        }    
+         .rightSection img{  
+            width: 70%;
+        }      
+        .purple{
+            color: rgb(118, 7, 223);
+        }   
+        .text-gray{
+            color: rgb(198, 195, 195);
+        }
+        #element{
+            color: rgb(118, 7, 223);
+        }
+        .secondSection{
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+            padding-bottom: 100px;
+        }
+        .secondSection h1{
+            font-size: 1.9rem;
+        }
+        .secondSection .box{
+            background: white;
+            width: 87vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+        .secondSection .vertical{
+            height: 93px;
+            width: 1px;
+            margin: 0 105px;
+            background-color: white;
+        }
+        .image-top{
+            width: 150px;
+            position: relative;
+            top: 10px;
+            left: 10px;
+        }        
+        .vertical-title{
+            position: relative;
+            top: 35px;
+            width: 150px;
+
+        }
+        .vertical-desc{
+           position: relative;
+           top: 45px;
+           color: grey;
+           width: 150px;
+           font-size: 10px;
+        }
+        footer{
+            background-color: rgb(106, 0, 106);
+        }
+        .footer{
+            display:flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+        .footer ul{
+            list-style: none;         
+        }
+        .footer >div{
+            width: 223px;
+        }
+        footer .footer-rights{
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+        @media screen and (max-width: 400px) {
+            body{
+               background-color: rgb(73, 3, 143); 
+            }
+            .box{
+                flex-direction: column;
+            }   
+            .secondSection .vertical{
+                height: unset; 
+                background-color: none;
+            }    
+            footer{
+                display: none;
+            }
+            .vertical-title{
+                top: 10px ;
+                left:160px ;
+            }
+            .vertical-desc{
+                top: 10px ;
+                left: 160px ;
+            }
+            .image-top{
+                top:  45px;
+            }
+            .secondSection .box{
+                width: 50vw;
+            }
+            .firstSection{
+                flex-direction: column-reverse;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"><b>Nimmi's Portfolio</b></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="Services.html">Services</a></li>
+                    <li><a href="Projects.html">Projects</a></li>
+                    <li><a href="Contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hello! My name is <span class="purple">Nimmi</span>
+                <div>and I am a passionate 
+                    <span id="element"></span>
+                    <div class="buttons">
+                        <a href="Nimmi's_Resume.docx" download>
+                        <button class="btn">Download Resume</button></a>
+                        <a href="https://github.com/Nimmi02" target="_blank">
+                        <button class="btn">Visit Github</button></a>
+                        <a href="https://www.linkedin.com/in/nimmi-kumari-995114333/" target="_blank">
+                        <button class="btn">LikedIn</button></a>
+                    </div>
+                    </div> 
+            </div>
+            <div class="rightSection">
+                <img src="Developer.png">
+            </div>
+        </section>
+        <hr style ="
+        border: 0;
+        background: rgb(225, 5, 111);
+        height: 1.2px;
+        margin: 40px 84px;
+        ">
+        <section class="secondSection">
+            <span class ="text-gray">What I have learned so far</span>
+        <h1>Cerifications</h1>
+        <div class="box">
+            <div class="vertical">
+                <img class="image-top" src="html.png">
+                <div class="vertical-title">
+                    HTML, CSS, and Javascript for Web Developers
+                </div>
+                <div class="vertical-desc">
+                    I completed a course from Johns Hopkins University titled “HTML, CSS, and JavaScript for Web Developers (Semantic Web)”. Through this course, I strengthened my critical thinking skills and gained hands-on experience in computer programming and web development. I learned to build and style web pages using HTML and CSS, add interactivity with JavaScript, and understand both front-end and back-end web development concepts. 
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="c.png">
+                <div class="vertical-title">
+                    Programming in C
+                </div>
+                <div class="vertical-desc">
+                    I completed a course from University of Michigan titled “Programming in C”, which helped me build a strong foundation in computer programming. Through this course, I learned core C concepts such as data types, variables, operators, control structures, functions, arrays, and pointers. It also strengthened my problem-solving and logical thinking skills, enabling me to write efficient, structured, and optimized programs while understanding how programs work at a low level.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="data.png">
+                <div class="vertical-title">
+                    Get Started with Sensitive Data Protection
+                </div>
+                <div class="vertical-desc">
+                    I completed “Get Started with Sensitive Data Protection”, where I learned the basics of identifying, handling, and protecting sensitive information. This helped me understand data privacy principles, common security risks, and best practices for safeguarding personal and confidential data in digital systems, ensuring responsible and secure use of information.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="llm.png">
+                <div class="vertical-title">
+                    Introduction to Large Language Models
+                </div>
+                <div class="vertical-desc">
+                    I completed “Introduction to Large Language Models”, where I learned the fundamentals of how large language models work, their applications, and limitations. The course helped me understand concepts such as natural language processing, model training basics, ethical considerations, and the practical use of LLMs in real-world scenarios.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="cybersecurity.png">
+                <div class="vertical-title">
+                    Introduction to Cybersecurity
+                </div>
+                <div class="vertical-desc">
+                    I completed “Introduction to Cybersecurity” by Cisco Networking Academy, where I learned the fundamentals of cybersecurity, common cyber threats, types of attacks, and basic security practices. The course helped me understand the importance of protecting networks, systems, and data, along with awareness of cyber safety and ethical responsibility in the digital world.
+                </div>
+            </div>
+            <div class="vertical">
+                <img class="image-top" src="css.png">
+                <div class="vertical-title">
+                    Build Your Portfolio Website with HTML and CSS
+                </div>
+                <div class="vertical-desc">
+                    I completed “Build Your Portfolio Website with HTML and CSS”, where I learned how to design and develop a personal portfolio website from scratch. This course strengthened my understanding of web development fundamentals, especially HTML and CSS, and helped me improve my web design skills. I learned to structure web pages properly, style them effectively, and create visually appealing, responsive layouts suitable for showcasing projects and skills professionally.
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Nimmi's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>C Programming</li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li>Cybersecurity</li>
+                    <li>Data Protection</li>
+                    <li>Large Language Models</li>
+                    <li>Web Development</li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li>Data Structure</li>
+                    <li>Problem Solving</li>
+                    <li>Critical Thinking</li>
+                    <li>Logical Reasoning</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights">
+            www.nimmisportfolio.com | All Rights Reserved © Copyright
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>  
+    <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Developer', 'Content Writer','Web Designer'],
+      typeSpeed: 50,
+    });
+  </script> 
+</body>
+</html>
